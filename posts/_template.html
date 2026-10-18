@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  POST TEMPLATE (do not publish this file as-is).
+  To create a post: copy to posts/<slug>.html, replace every {{PLACEHOLDER}},
+  DELETE the noindex robots line below and use "index, follow", then:
+    1) add a post card to index.html between POSTS:START / POSTS:END (newest first) and remove the empty state,
+    2) add the post to the Blog "blogPost" array in index.html JSON-LD,
+    3) add the post URL to sitemap.xml.
+  Rules: every http(s) link gets target="_blank" rel="noopener" (mailto/tel/#anchors exempt). No em dashes.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{SEO_TITLE}} | LivingLocal Realty</title>
+<meta name="description" content="{{META_DESCRIPTION_150_160_CHARS}}">
+<meta name="author" content="Thomas Moriarty">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://livelocalrealty.github.io/blog/posts/{{SLUG}}.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LivingLocal Realty Blog">
+<meta property="og:title" content="{{SEO_TITLE}}">
+<meta property="og:description" content="{{META_DESCRIPTION_150_160_CHARS}}">
+<meta property="og:url" content="https://livelocalrealty.github.io/blog/posts/{{SLUG}}.html">
+<meta property="og:image" content="{{OG_IMAGE_URL_OR https://livelocalrealty.github.io/blog/assets/og-image.jpg}}">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="{{DATE_PUBLISHED_YYYY-MM-DD}}">
+<meta property="article:modified_time" content="{{DATE_MODIFIED_YYYY-MM-DD}}">
+<meta property="article:author" content="Thomas Moriarty">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{SEO_TITLE}}">
+<meta name="twitter:description" content="{{META_DESCRIPTION_150_160_CHARS}}">
+<meta name="twitter:image" content="{{OG_IMAGE_URL_OR https://livelocalrealty.github.io/blog/assets/og-image.jpg}}">
+<meta name="theme-color" content="#000066">
+<link rel="icon" href="../assets/logo.png" type="image/png">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://livelocalrealty.github.io/blog/posts/{{SLUG}}.html#article",
+      "headline": "{{H1_HEADLINE}}",
+      "description": "{{META_DESCRIPTION_150_160_CHARS}}",
+      "image": "{{OG_IMAGE_URL_OR https://livelocalrealty.github.io/blog/assets/og-image.jpg}}",
+      "datePublished": "{{DATE_PUBLISHED_YYYY-MM-DD}}",
+      "dateModified": "{{DATE_MODIFIED_YYYY-MM-DD}}",
+      "inLanguage": "en-US",
+      "mainEntityOfPage": "https://livelocalrealty.github.io/blog/posts/{{SLUG}}.html",
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Moriarty",
+        "jobTitle": "Real Estate Agent",
+        "worksFor": {"@type": "Organization", "name": "LivingLocal Realty"},
+        "url": "https://livelocalrealty.github.io/blog/"
+      },
+      "publisher": {"@id": "https://livelocalrealty.github.io/blog/#agent"},
+      "about": "{{PRIMARY_TOPIC}}",
+      "keywords": "{{KEYWORDS_COMMA_SEPARATED}}"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://livelocalrealty.github.io/blog/posts/{{SLUG}}.html#faq",
+      "mainEntity": [
+        {"@type": "Question", "name": "{{FAQ_Q1}}", "acceptedAnswer": {"@type": "Answer", "text": "{{FAQ_A1}}"}},
+        {"@type": "Question", "name": "{{FAQ_Q2}}", "acceptedAnswer": {"@type": "Answer", "text": "{{FAQ_A2}}"}},
+        {"@type": "Question", "name": "{{FAQ_Q3}}", "acceptedAnswer": {"@type": "Answer", "text": "{{FAQ_A3}}"}}
+      ]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://livelocalrealty.github.io/blog/#agent",
+      "name": "Thomas Moriarty",
+      "worksFor": {"@type": "Organization", "name": "LivingLocal Realty"},
+      "telephone": "+1-612-217-4663",
+      "email": "mailto:thomas@livinglocalrealty.com",
+      "address": {"@type": "PostalAddress", "addressLocality": "Maple Grove", "addressRegion": "MN", "addressCountry": "US"},
+      "sameAs": ["https://seelink.bio/LivingLocal"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Blog", "item": "https://livelocalrealty.github.io/blog/"},
+        {"@type": "ListItem", "position": 2, "name": "{{H1_HEADLINE}}", "item": "https://livelocalrealty.github.io/blog/posts/{{SLUG}}.html"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="LivingLocal Realty Blog home"><img src="../assets/logo.png" alt="LivingLocal Realty" width="300" height="134"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="../#articles">Articles</a>
+      <a href="../#about">About Thomas</a>
+      <a class="cta" href="https://ThomasM.15SecondHomeValues.com" target="_blank" rel="noopener">What's My Home Worth?</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <article class="article">
+      <div class="breadcrumb"><a href="../">Blog</a> / {{SHORT_TOPIC}}</div>
+      <h1>{{H1_HEADLINE}}</h1>
+      <p class="byline">By <strong>Thomas Moriarty</strong>, LivingLocal Realty, Maple Grove MN &middot; Published <time datetime="{{DATE_PUBLISHED_YYYY-MM-DD}}">{{DATE_PUBLISHED_READABLE}}</time> &middot; Last updated <time datetime="{{DATE_MODIFIED_YYYY-MM-DD}}">{{DATE_MODIFIED_READABLE}}</time></p>
+
+      <p class="answer"><strong>Quick answer:</strong> {{DIRECT_ANSWER_40_60_WORDS}}</p>
+
+      {{ARTICLE_BODY_HTML}}
+
+      <section class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <dl>
+          <dt>{{FAQ_Q1}}</dt><dd>{{FAQ_A1}}</dd>
+          <dt>{{FAQ_Q2}}</dt><dd>{{FAQ_A2}}</dd>
+          <dt>{{FAQ_Q3}}</dt><dd>{{FAQ_A3}}</dd>
+        </dl>
+      </section>
+
+      <div class="cta-box">
+        <strong>{{CTA_HEADLINE}}</strong>
+        <p>{{CTA_TEXT}}</p>
+        <a class="btn" href="{{CTA_URL}}" target="_blank" rel="noopener">{{CTA_BUTTON_TEXT}}</a>
+      </div>
+
+      <p class="byline" style="border:0;margin-top:28px">Questions? Call or text Thomas at <a href="tel:+16122174663">612-217-4663</a> or email <a href="mailto:thomas@livinglocalrealty.com">thomas@livinglocalrealty.com</a>.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="../assets/logo-dark.png" alt="LivingLocal Realty" width="300" height="134" loading="lazy">
+        <strong>Thomas Moriarty</strong>, LivingLocal Realty<br>
+        Maple Grove, MN. Licensed in Minnesota and Wisconsin.
+      </div>
+      <ul>
+        <li><a href="tel:+16122174663">612-217-4663</a></li>
+        <li><a href="mailto:thomas@livinglocalrealty.com">thomas@livinglocalrealty.com</a></li>
+        <li><a href="https://seelink.bio/LivingLocal" target="_blank" rel="noopener">seelink.bio/LivingLocal</a></li>
+        <li><a href="https://ThomasM.15SecondHomeValues.com" target="_blank" rel="noopener">What's my home worth?</a></li>
+      </ul>
+    </div>
+    <p class="fine">&copy; <span id="yr">2026</span> Thomas Moriarty, LivingLocal Realty. Information is believed reliable but not guaranteed. Not intended to solicit buyers or sellers currently under contract.</p>
+  </div>
+</footer>
+</body>
+</html>
