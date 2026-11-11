@@ -1,6 +1,6 @@
-# LivingLocal Realty Blog
+# LivingLocal Realty® Blog
 
-Static blog for Thomas Moriarty, LivingLocal Realty (Maple Grove, MN), served by GitHub Pages at
+Static blog for Thomas Moriarty, LivingLocal Realty® (Maple Grove, MN), served by GitHub Pages at
 https://livelocalrealty.github.io/blog/
 
 No build step. Plain HTML + one stylesheet (`assets/style.css`). `.nojekyll` disables Jekyll.
