@@ -68,6 +68,11 @@
   ]
 }
 </script>
+<script>
+history.scrollRestoration='manual';
+if(!location.hash)scrollTo(0,0);
+addEventListener('pageshow',function(e){if(e.persisted)location.reload()});
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>

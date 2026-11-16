@@ -10,6 +10,11 @@
 <link rel="icon" href="/blog/assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/blog/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/blog/assets/style.css">
+<script>
+history.scrollRestoration='manual';
+if(!location.hash)scrollTo(0,0);
+addEventListener('pageshow',function(e){if(e.persisted)location.reload()});
+</script>
 </head>
 <body>
 <header class="site-header">
